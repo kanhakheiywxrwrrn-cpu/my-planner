@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Todo List</title>
+
+  <!-- CSS -->
+  <link
+    rel="stylesheet"
+    href="../css/todo.css"
+  />
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+</head>
+
+<body>
+
+  <div class="todo-container">
+
+    <!-- HEADER -->
+
+    <header class="top-header">
+
+      <div class="profile-section">
+
+        <img
+          id="userImage"
+          src=""
+          alt="Profile"
+        />
+
+        <div>
+
+          <p class="welcome-text">
+            Today's Tasks ✨
+          </p>
+
+          <h2 id="username">
+            User
+          </h2>
+
+        </div>
+
+      </div>
+
+      <button id="menuBtn">
+        ☰
+      </button>
+
+    </header>
+
+    <!-- TASKS -->
+
+    <section class="tasks-section">
+
+      <div id="taskList">
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- FLOAT BUTTON -->
+
+  <button
+    class="add-btn"
+    id="addTaskBtn"
+  >
+    +
+  </button>
+
+  <!-- SIDEBAR -->
+
+  <div class="sidebar" id="sidebar">
+
+    <div class="sidebar-content">
+
+      <h2>
+        Dashboard 🌸
+      </h2>
+
+      <a href="dashboard.html">
+        Home
+      </a>
+
+      <a href="todo.html">
+        Tasks
+      </a>
+
+      <a href="finance.html">
+        Finance
+      </a>
+
+      <a href="completed.html">
+        Completed Tasks
+      </a>
+
+      <a href="settings.html">
+        Settings
+      </a>
+
+      <button id="logoutBtn">
+        Logout
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+
+  <script src="../js/todo.js"></script>
+
+</body>
+</html>

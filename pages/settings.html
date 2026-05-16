@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Settings</title>
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="../css/settings.css"
+  />
+
+  <!-- FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+</head>
+
+<body>
+
+  <div class="settings-container">
+
+    <!-- HEADER -->
+
+    <header class="top-header">
+
+      <button id="backBtn">
+        ←
+      </button>
+
+      <h1>
+        Settings ⚙️
+      </h1>
+
+    </header>
+
+    <!-- PROFILE -->
+
+    <section class="profile-box">
+
+      <label
+        for="imageInput"
+        class="profile-upload"
+      >
+
+        <img
+          id="profileImage"
+          src=""
+          alt="Profile"
+        />
+
+      </label>
+
+      <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+        hidden
+      />
+
+      <input
+        type="text"
+        id="nameInput"
+        placeholder="Your Name"
+      />
+
+      <button id="saveProfileBtn">
+        Save Profile
+      </button>
+
+    </section>
+
+    <!-- DARK MODE -->
+
+    <section class="settings-box">
+
+      <div class="setting-item">
+
+        <div>
+          <h3>
+            Dark Mode
+          </h3>
+
+          <p>
+            Enable dark appearance
+          </p>
+        </div>
+
+        <label class="switch">
+
+          <input
+            type="checkbox"
+            id="darkToggle"
+          />
+
+          <span class="slider"></span>
+
+        </label>
+
+      </div>
+
+    </section>
+
+    <!-- DATA -->
+
+    <section class="settings-box">
+
+      <button id="clearDataBtn">
+        Clear All Data
+      </button>
+
+      <button id="logoutBtn">
+        Logout
+      </button>
+
+    </section>
+
+  </div>
+
+  <!-- JS -->
+
+  <script src="../js/settings.js"></script>
+
+</body>
+</html>

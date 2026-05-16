@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Add Task</title>
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="../css/add-task.css"
+  />
+
+  <!-- FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+</head>
+
+<body>
+
+  <div class="add-task-container">
+
+    <!-- HEADER -->
+
+    <header class="top-header">
+
+      <button id="backBtn">
+        ←
+      </button>
+
+      <h1>
+        Add Task ✨
+      </h1>
+
+    </header>
+
+    <!-- FORM -->
+
+    <div class="task-form">
+
+      <!-- TITLE -->
+
+      <input
+        type="text"
+        id="taskTitle"
+        placeholder="Task Title"
+      />
+
+      <!-- DESCRIPTION -->
+
+      <textarea
+        id="taskDescription"
+        placeholder="Task Description"
+      ></textarea>
+
+      <!-- DATE -->
+
+      <input
+        type="date"
+        id="taskDate"
+      />
+
+      <!-- TIME -->
+
+      <input
+        type="time"
+        id="taskTime"
+      />
+
+      <!-- LOCATION -->
+
+      <input
+        type="text"
+        id="taskLocation"
+        placeholder="Location"
+      />
+
+      <!-- NOTIFICATION -->
+
+      <select id="taskNotify">
+
+        <option value="5">
+          Notify before 5 minutes
+        </option>
+
+        <option value="10">
+          Notify before 10 minutes
+        </option>
+
+        <option value="30">
+          Notify before 30 minutes
+        </option>
+
+        <option value="60">
+          Notify before 1 hour
+        </option>
+
+      </select>
+
+      <!-- SAVE -->
+
+      <button id="saveTaskBtn">
+        Save Task
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+
+  <script src="../js/add-task.js"></script>
+
+</body>
+</html>

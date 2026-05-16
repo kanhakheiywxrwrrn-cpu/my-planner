@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Dashboard</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/dashboard.css"/>
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+  <div class="dashboard-container">
+
+    <!-- HEADER -->
+    <header class="top-header">
+
+      <div class="profile-section">
+
+        <img id="userImage" src="" alt="Profile"/>
+
+        <div>
+          <p class="welcome-text">Welcome 👋</p>
+          <h2 id="username">User</h2>
+        </div>
+
+      </div>
+
+      <button id="menuBtn">☰</button>
+
+    </header>
+
+    <!-- DATE -->
+    <section class="date-section">
+      <h1 id="currentDate">Monday, 16 May</h1>
+    </section>
+
+    <!-- SWITCH -->
+    <section class="switch-buttons">
+
+      <button class="active-btn">Calendar</button>
+
+      <button id="todoBtn">Todo</button>
+
+    </section>
+
+    <!-- CALENDAR -->
+    <section class="calendar-box">
+
+      <div class="calendar-header">
+
+        <button id="prevMonth">←</button>
+
+        <h2 id="monthYear">May 2026</h2>
+
+        <button id="nextMonth">→</button>
+
+      </div>
+
+      <div class="days">
+        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      </div>
+
+      <div id="calendarDates"></div>
+
+    </section>
+
+    <!-- SELECTED TASKS -->
+    <section class="selected-tasks">
+
+      <h3 id="selectedDateTitle">Tasks for Today 🌸</h3>
+
+      <div id="selectedTaskList"></div>
+
+    </section>
+
+    <!-- REVIEW -->
+    <section class="review-box">
+
+      <h3>How was your day? 🌙</h3>
+
+      <textarea id="dailyReview" placeholder="Write your thoughts..."></textarea>
+
+      <button id="saveReviewBtn">Save Review</button>
+
+    </section>
+
+  </div>
+
+  <!-- FLOAT BUTTONS -->
+  <div class="floating-buttons">
+
+    <button class="finance-btn" id="financeBtn">💰</button>
+
+    <button class="add-btn" id="addTaskBtn">+</button>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+
+    <div class="sidebar-content">
+
+      <h2>Dashboard 🌸</h2>
+
+      <a href="dashboard.html">Home</a>
+      <a href="todo.html">Tasks</a>
+      <a href="finance.html">Finance</a>
+      <a href="completed.html">Completed Tasks</a>
+      <a href="settings.html">Settings</a>
+
+      <button id="logoutBtn">Logout</button>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="../js/dashboard.js"></script>
+
+</body>
+</html>

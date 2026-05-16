@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+
+  background: #FFEFF3;
+
+  min-height: 100vh;
+
+  padding: 20px;
+}
+
+/* CONTAINER */
+
+.add-task-container{
+  width: 100%;
+  max-width: 500px;
+
+  margin: auto;
+}
+
+/* HEADER */
+
+.top-header{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  margin-bottom: 35px;
+}
+
+.top-header h1{
+  font-size: 28px;
+  color: #444;
+}
+
+#backBtn{
+  width: 50px;
+  height: 50px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: white;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* FORM */
+
+.task-form{
+  background: white;
+
+  border-radius: 30px;
+
+  padding: 25px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+/* INPUTS */
+
+.task-form input,
+.task-form textarea,
+.task-form select{
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 20px;
+
+  background: #FFF5F8;
+
+  padding: 18px;
+
+  font-size: 15px;
+
+  font-family: inherit;
+}
+
+.task-form textarea{
+  height: 140px;
+
+  resize: none;
+}
+
+/* SAVE BUTTON */
+
+#saveTaskBtn{
+  border: none;
+
+  padding: 16px;
+
+  border-radius: 20px;
+
+  background: #FF6B9E;
+
+  color: white;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+#saveTaskBtn:hover{
+  background: #ff4d88;
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+  body{
+    padding: 15px;
+  }
+
+  .task-form{
+    padding: 20px;
+  }
+
+  .top-header h1{
+    font-size: 24px;
+  }
+
+}

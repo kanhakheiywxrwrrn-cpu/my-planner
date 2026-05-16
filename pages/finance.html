@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Finance</title>
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="../css/finance.css"
+  />
+
+  <!-- FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+</head>
+
+<body>
+
+  <div class="finance-container">
+
+    <!-- HEADER -->
+
+    <header class="top-header">
+
+      <button id="backBtn">
+        ←
+      </button>
+
+      <h1>
+        Finance 💰
+      </h1>
+
+    </header>
+
+    <!-- BALANCE -->
+
+    <section class="balance-box">
+
+      <p>
+        Total Balance
+      </p>
+
+      <h2 id="totalBalance">
+        $0
+      </h2>
+
+    </section>
+
+    <!-- TYPE BUTTONS -->
+
+    <section class="type-buttons">
+
+      <button
+        class="active-type"
+        id="incomeBtn"
+      >
+        Income
+      </button>
+
+      <button
+        id="expenseBtn"
+      >
+        Expense
+      </button>
+
+    </section>
+
+    <!-- FORM -->
+
+    <section class="finance-form">
+
+      <input
+        type="text"
+        id="financeTitle"
+        placeholder="Title"
+      />
+
+      <input
+        type="number"
+        id="financeAmount"
+        placeholder="Amount"
+      />
+
+      <button id="saveFinanceBtn">
+        Save
+      </button>
+
+    </section>
+
+    <!-- HISTORY -->
+
+    <section class="history-section">
+
+      <h3>
+        History
+      </h3>
+
+      <div id="historyList">
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- JS -->
+
+  <script src="../js/finance.js"></script>
+
+</body>
+</html>

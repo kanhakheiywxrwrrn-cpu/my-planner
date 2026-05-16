@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>My Planner</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css"/>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- SETUP PAGE -->
+  <div class="setup-container">
+
+    <!-- LOGO -->
+    <h1 class="logo">
+      My Planner 🌸
+    </h1>
+
+    <!-- PROFILE IMAGE -->
+    <label for="imageInput" class="profile-upload">
+
+      <img
+        id="profilePreview"
+        src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+        alt="Profile"
+      />
+
+    </label>
+
+    <input
+      type="file"
+      id="imageInput"
+      accept="image/*"
+      hidden
+    />
+
+    <!-- USER NAME -->
+    <input
+      type="text"
+      id="username"
+      placeholder="Enter your name"
+    />
+
+    <!-- START BUTTON -->
+    <button id="startBtn">
+      Start Planner
+    </button>
+
+  </div>
+
+  <!-- JS -->
+  <script src="/js/script.js"></script>
+
+</body>
+</html>

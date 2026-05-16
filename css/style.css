@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #FFEFF3;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+/* SETUP CONTAINER */
+
+.setup-container{
+  width: 100%;
+  max-width: 420px;
+
+  background: white;
+
+  border-radius: 30px;
+
+  padding: 40px 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+
+.logo{
+  font-size: 36px;
+  font-weight: 700;
+
+  color: #FF6B9E;
+
+  margin-bottom: 40px;
+
+  text-align: center;
+}
+
+/* PROFILE IMAGE */
+
+.profile-upload{
+  width: 160px;
+  height: 160px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  border: 6px solid #FFD4E2;
+
+  margin-bottom: 30px;
+
+  transition: 0.3s;
+}
+
+.profile-upload:hover{
+  transform: scale(1.03);
+}
+
+.profile-upload img{
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* INPUT */
+
+#username{
+  width: 100%;
+
+  padding: 16px 20px;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 18px;
+
+  background: #FFF4F7;
+
+  font-size: 16px;
+
+  margin-bottom: 25px;
+}
+
+#username::placeholder{
+  color: #999;
+}
+
+/* BUTTON */
+
+#startBtn{
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: #FF6B9E;
+
+  color: white;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+#startBtn:hover{
+  background: #ff4d88;
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+
+@media(max-width: 500px){
+
+  .setup-container{
+    border-radius: 25px;
+    padding: 30px 20px;
+  }
+
+  .logo{
+    font-size: 30px;
+  }
+
+  .profile-upload{
+    width: 140px;
+    height: 140px;
+  }
+
+}
